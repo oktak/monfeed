@@ -4,6 +4,10 @@ _last update: 2019-07-08_
 
 To have a glance of selected pages feed in one page. You would not miss any posts of the page.
 
+live demo: [https://oktak.github.io/monfeed/](https://oktak.github.io/monfeed/)
+
+![Screenshot of Desktop](assets/img/monfeed_desktop_ed.png)
+
 It uses `localStorage` HTML5 technology in browsers to retain the users\' preferences. And it uses `Social Plugin` of Facebook to show the feeds.
 
 ## Get Started
@@ -13,6 +17,16 @@ It uses `localStorage` HTML5 technology in browsers to retain the users\' prefer
 2. You may click `'X'` button to remove the correspondant item.
 
 3. Click `'預設值'` to restore to the default list. **All your preferences will be Cleared!**
+
+## Precaution
+
+- This web page supports mobile responsive.
+- It is memory intense.
+- It is suggested to use under WiFi connection.
+- Some browsers, e.g. `Firefox`, it may block Facebook Social Plugin, which is treated as tracking contents. You may need to disable the blocking manually.
+
+![Screenshot of Mobile](assets/img/monfeed_mobile_ed.png)
+Mobile Version
 
 ## To Contribute
 - Please feel free to make pull requests.

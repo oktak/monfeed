@@ -20,15 +20,15 @@
 <body>
 <!-- Add your site or application content here -->
 <div class="container mx-auto">
-    <div class="flex mb-4">
-        <div class="w-1/4 overflow-x-hidden bg-gray-100">
+    <div class="flex mb-4 max-h-screen">
+        <div class="w-1/4 overflow-x-auto max-h-full bg-gray-100">
             <div class="control">
                 <!-- <button id="toggleCont" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">修改</button> -->
                 <div id="toggleTarget" class="">
-                    <input id="userInp" type="text" class="border border-solid border-black rounded-sm" />
-                    <button id="itemAdd" onClick="javascript:recordAdd();" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">加入</button>
+                    <input id="userInp" type="text" class="w-full border border-solid border-black rounded-sm" />
+                    <button id="itemAdd" onClick="javascript:recordAdd();" class="w-full block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">加入</button>
         
-                    <ul id="itemList" class="mt-4 py-4 border-t border-grey-400"></ul>
+                    <ul id="itemList" class="mt-4 border-t text-sm border-grey-400"></ul>
                     <button onClick="javascript:resetDefault()" class="my-12 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">預設值</button>
                 </div>
             </div>
