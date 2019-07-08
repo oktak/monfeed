@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!-- Add your site or application content here -->
+<div class="container mx-auto">
+    <div class="flex mb-4">
+        <div class="w-1/4 overflow-x-hidden bg-gray-100">
+            <div class="control">
+                <!-- <button id="toggleCont" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">修改</button> -->
+                <div id="toggleTarget" class="">
+                    <input id="userInp" type="text" class="border border-solid border-black rounded-sm" />
+                    <button id="itemAdd" onClick="javascript:recordAdd();" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">加入</button>
+        
+                    <ul id="itemList" class="mt-4 py-4 border-t border-grey-400"></ul>
+                    <button onClick="javascript:resetDefault()" class="my-12 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">預設值</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-3/4">
+            <div class="trackCont">
+                <div id="track"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<script src="assets/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143293566-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-143293566-1');
+</script>
+</body>
+
+</html>
